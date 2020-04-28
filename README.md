@@ -1,15 +1,26 @@
 
 
+#
 
-# Env setting (temporary.. unnecessary packages included)
+
+
+
+# Env setting 
 
 ```
 conda create --name sc python=3.7
 conda activate sc
 
 conda install pytorch torchvision cudatoolkit=10.0 -c pytorch
-conda install ipykernel numpy pandas scipy scikit-learn matplotlib r-base=3.6.0
+conda install ipykernel numpy pandas scipy scikit-learn matplotlib
 ```
+
+# Env setting (Optinal)
+
+```
+conda install ipykernel r-base=3.6.0
+```
+
 ```
 install.packages('IRkernel')
 IRkernel::installspec()
@@ -18,6 +29,8 @@ IRkernel::installspec()
 ```
 install.packages('Seurat')
 library(Seurat)
+install.packages("devtools")
+devtools::install_github("BaderLab/scClustViz")
 ```
 
 ```
