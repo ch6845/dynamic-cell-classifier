@@ -25,7 +25,9 @@ conda install ipykernel r-base=3.6.0
 install.packages('IRkernel')
 IRkernel::installspec()
 ```
-
+```
+conda install -c bioconda bioconductor-biocinstaller
+```
 ```
 install.packages('Seurat')
 library(Seurat)
